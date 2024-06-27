@@ -19,7 +19,7 @@ app.get("/", async (req, res) => {
   if (brid) {
     try {
       const response = await axios.get(
-        `https://izc-dutch-lady-gum-5dd529beb01e.herokuapp.com/voucher/getVoucher/${req.query.brid}`
+        `https://izc-bls-dutch-lady-gum-4bcaa2e78079.herokuapp.com/voucher/getVoucher/${req.query.brid}`
       );
       const voucherCode = response.data.voucher.code;
       res.render("index.pug", { voucherCode });
